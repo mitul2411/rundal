@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="container">
+            <section class="row justify-content-between py-3">
+                <div class="col-5 logo col-lg-3">
+                    <img src="assets/logo-dark (2).svg" class="img-fluid">
+                </div>
+                <div class="col-7 d-none d-lg-block">
+                    <ul class="row " style="list-style: none;">
+                        <li class="col-3">home demo</li>
+                        <li class="col-3">about as</li>
+                        <li class="col-3">servics</li>
+                        <li class="col-3">all apges</li>    
+                    </ul>
+                </div>
+                <div class="col-5 text-end col-lg-2">
+                    <button>Get in touch</button>
+                    <button class="d-lg-none">icon</button>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <section class="banner py-5">
+        <div class="container py-5">
+            <section class="row justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <p>✦ Business Solution
+                    </p>
+                    <h2>Agency that Drives <br> Growth through User <br> Experience</h2>
+                    <p>Discover how you can apply your talent and skills to harness powerful change with our
+                        career-building student programs. </p>
+                    <form action="">
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email">
+                    </form>
+                      <section class="col-5 mt-5" style="display: flex; justify-content: space-between;">
+                        <img src="./assets/1.png" class="img-fluid" style="width: 40%;">
+                        <p>hygsjsij</p>
+                        <img src="./assets/2.png" class="img-fluid" style="width: 40%;">
+                        <p>justify-content-around</p>
+                        <img src="./assets/3.png" class="img-fluid" style="width: 40%;">
+                        <p>hdfenfe
+
+                        </p>
+                      </section>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <img src="./assets/y.png " alt="">
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- marquee start -->
+    <div class="container">
+        <section class="row">
+            <marquee direction="right" height="100px" class="col-12">
+                <span style="width: 235px; margin-right: 30px;" class="col-4">
+                    <img src="./assets/logo-5.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4">
+                    <img src="./assets/logo-6.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4 ">
+                    <img src="./assets/logo-7.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4 ">
+                    <img src="./assets/logo-9.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4">
+                    <img src="./assets/logo-8.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4">
+                    <img src="./assets/logo-5.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4">
+                    <img src="./assets/logo-6.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4">
+                    <img src="./assets/logo-7.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4">
+                    <img src="./assets/logo-9.png" class="img-fluid">
+                </span>
+                <span style="width: 235px; margin-right: 30px;" class="col-4">
+                    <img src="./assets/logo-8.png" class="img-fluid">
+            </marquee>
+    </div>
+    <!-- marquee end -->
+
+    <!--  -->
+    <section class="container">
+        <div class="demor  col-lg-6 text-center" style="margin-left: 27%;">
+            <h2>Solution We Offer</h2>
+            <p class="mt-5">
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+            </p>
+        </div>
+
+    </section>
+    <div class="container">
+        <section class="row mt-5 justify-content-between">
+            <div class="col-lg-4 col-md-6 " style="margin-top: 40px; box-shadow: 10px 2px whitesmoke;">
+                <img src="./assets/browser.png" class="img-fluid " style="width: 50px;">
+                <h3 class="mt-3">Web Design Service</h3>
+                <p class="mt-4">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor
+                    incididunt.</p>
+                <a href="">
+                    Learn More
+                </a>
+
+            </div>
+            <div class="col-lg-4 col-md-6 " style="margin-top: 40px; box-shadow: 10px 2px whitesmoke;">
+                <img src="./assets/discord.png" class="img-fluid " style="width: 50px;">
+                <h3 class="mt-3">Web Design Service</h3>
+                <p class="mt-4">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor
+                    incididunt.</p>
+                <a href="">
+                    Learn More
+                </a>
+
+            </div>
+            <div class="col-lg-4 col-md-6 " style="margin-top: 40px; box-shadow: 10px 2px whitesmoke;">
+                <img src="./assets/website.png" class="img-fluid " style="width: 50px;">
+                <h3 class="mt-3">Web Design Service</h3>
+                <p class="mt-4">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor
+                    incididunt.</p>
+                <a href="">
+                    Learn More
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!--  -->
+
+    <!--  -->
+    <div class="container mt-5 py-5">
+        <section class="row justify-content-between">
+            <div class="col-12 col-lg-5">
+                <h2>Here is the reason Why you <br> should Choose us?</h2>
+                <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> do eiusmod
+                    tempor incididunt ut labore et dolore magna <br> aliqua. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing <br>elit.</p>
+                <ul>
+                    <li class="mt-5">It sets the impression for customer service</li>
+                    <li class="mt-5">It aids your search engine optimization strategy</li>
+                    <li class="mt-5">We builds trust with your audience</li>
+                    <li class="mt-5">Rundal create the website of your dream</li>
+                </ul>
+            </div>
+            <div class="col-12 py-5 col-lg-6 py-lg-0">
+                <img src="./assets/idea-solution.png" class="img-fluid">
+            </div>
+        </section>
+    </div>
+    </section>
+    <!--  -->
+    <div class="container mt-5 py-5">
+
+        <section class="row justify-content-between">
+            <div class="col-12 py-5 col-lg-6 py-lg-0">
+                <img src="./assets/idea-solution-2.png" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-5">
+                <h2>For the benefit of our <br> clients, we offer solutions.</h2>
+                <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> do eiusmod
+                    tempor incididunt ut labore et dolore magna <br> aliqua. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing <br>elit.</p>
+
+                <div class="" style="display: flex;justify-content: space-between;">
+                    <div class="">
+                        <p><span>10</span>+</p>
+                        <p>Years of<br> Experience</p>
+                    </div>
+                    <div>
+                        <p><span>40</span>+</p>
+                        <p>Team<br> Members</p>
+
+                    </div>
+                    <div>
+                        <p><span>100</span>%</p>
+                        <p>Customer<br> Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    </section>
+    <!-- end -->
+
+    <!-- strat t -->
+    <section class="container">
+        <div class="demor  col-lg-6 text-center" style="margin-left: 27%;">
+            <h2>Our Plans & Pricing</h2>
+            <p class="mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="mt-5">
+                <span>Annually</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span>Monthly</span>
+
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="row  mt-5 justify-content-between">
+            <div class="col-lg-4 col-md-6 " style="margin-top: 40px; box-shadow: 10px 2px whitesmoke;">
+                <h2>Basic</h2>
+                <p class="mt-5">Great For Small Business</p>
+                <h3 class="mt-5">$119.99</h3>
+                <div class="mt-3 ">
+                    <span>✔</span>
+                    <span>Professional & Custom Design</span>
+                </div>
+                <div class="mt-3">
+                    <span>✔</span>
+                    <span>Responsive design upto 8 pages </span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>Domain & Hosting Included </span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>SSL Certificate</span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>6 Month Maintenance</span>
+                </div>
+                <div class="mt-3">
+                    <button>Buy Now</button>
+                </div>
+                <div class="" style="display: flex;">
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 " style="margin-top: 40px; box-shadow: 10px 2px whitesmoke;">
+                <h2>Basic</h2>
+                <p class="mt-5">Great For Small Business</p>
+                <h3 class="mt-5">$119.99</h3>
+                <div class="mt-3 ">
+                    <span>✔</span>
+                    <span>Professional & Custom Design</span>
+                </div>
+                <div class="mt-3">
+                    <span>✔</span>
+                    <span>Responsive design upto 8 pages </span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>Domain & Hosting Included </span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>SSL Certificate</span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>6 Month Maintenance</span>
+                </div>
+                <div class="mt-3">
+                    <button>Buy Now</button>
+                </div>
+                <div class="" style="display: flex;">
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 " style="margin-top: 40px; box-shadow: 10px 2px whitesmoke;">
+                <h2>Basic</h2>
+                <p class="mt-5">Great For Small Business</p>
+                <h3 class="mt-5">$119.99</h3>
+                <div class="mt-3 ">
+                    <span>✔</span>
+                    <span>Professional & Custom Design</span>
+                </div>
+                <div class="mt-3">
+                    <span>✔</span>
+                    <span>Responsive design upto 8 pages </span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>Domain & Hosting Included </span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>SSL Certificate</span>
+                </div>
+                <div class="mt-3">
+                    <span>✘</span>
+                    <span>6 Month Maintenance</span>
+                </div>
+                <div class="mt-3">
+                    <button>Buy Now</button>
+                </div>
+                <div class="" style="display: flex;">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- end t-->
+
+        <!--  -->
+        <div class="container">
+            <section class="row justify-content-around mt-5 py-5">
+                <div class="col-5 mt-5 ">
+                    <h2>Get a Digital Solution For <br> Your Company That is Made <br> Just For You.</h2>
+                    <button>start youre free trial</button>
+                </div>
+                <div class="col-4 mt-5">
+                    <p>We have a skilled tech-savvy team of developers that works on clients' projects efficiently and
+                        delivers the project right on time.</p>
+                </div>
+            </section>
+        </div>
+            <marquee height="200px" direction="right" >
+                <div class="col-12" >
+                    <section class="row bg-warning">
+
+                        <div class="col-4 " style=" background-color: whitesmoke;" >
+                           <div class="row">
+                            <div class="col-3">
+                                <img src="./assets/team-2.jpg" class="img-fluid" style="border-radius: 70px;">
+                            </div>
+                            <div class="col-4">
+                                <h5>Petey Cruiser</h5>
+                                <p>Data Scientist</p>
+                            </div>
+                            <div class="col-3 ms-5">
+                                <img src="./assets/brand-2.svg" class="img-fluid">
+                            </div>
+                           </div>
+                           <p class="ms-4 mt-3" >Really powerful and intuitive. We were <br> amazed at how many tools this packs <br> under the hood. More intuitive to use <br>  than many similar products such as  <br>Spark and Canva.</p>
+                        </div>
+                       
+                        <div class="col-4 " style="   background-color: whitesmoke;" >
+                            <div class="row">
+                             <div class="col-3">
+                                 <img src="./assets/team-3.jpg" class="img-fluid mt-3" style="border-radius: 70px;">
+                             </div>
+                             <div class="col-4 mt-3">
+                                 <h5>Petey Cruiser</h5>
+                                 <p>Data Scientist</p>
+                             </div>
+                             <div class="col-3 ms-5">
+                                 <img src="./assets/brand-3.svg" class="img-fluid mt-3">
+                             </div>
+                            </div>
+                            <p class="ms-4 mt-3" >Really powerful and intuitive. We were <br> amazed at how many tools this packs <br> under the hood. More intuitive to use <br>  than many similar products such as  <br>Spark and Canva.</p>
+                         </div> 
+                         <div class="col-4 " style="   background-color: whitesmoke;" >
+                            <div class="row">
+                             <div class="col-3">
+                                 <img src="./assets/team-3.jpg" class="img-fluid mt-3" style="border-radius: 70px;">
+                             </div>
+                             <div class="col-4 mt-3">
+                                 <h5>Petey Cruiser</h5>
+                                 <p>Data Scientist</p>
+                             </div>
+                             <div class="col-3 ms-5">
+                                 <img src="./assets/brand-3.svg" class="img-fluid mt-3">
+                             </div>
+                            </div>
+                            <p class="ms-4 mt-3" >Really powerful and intuitive. We were <br> amazed at how many tools this packs <br> under the hood. More intuitive to use <br>  than many similar products such as  <br>Spark and Canva.</p>
+                        </div>                    
+                    </section>
+              
+                </div>
+            </marquee>
+            <h4 class="text-center">Read more real review on the internet</h4>
+            <div class=" text-center mt-3 "  style="width:40% ; margin-left: 30%;">
+                 <img src="./assets/Google-Reviews.png" class="img-fluid col-3">
+                 <img src="./assets/trustpilot-logo.png"  class="img-fluid col-3 ms-3">
+                  <img src="./assets/fbreview.png" class="img-fluid col-3 ms-3">
+            </div>
+          </div>
+            <!-- end -->
+
+            <!--  -->
+            <section class="banner py-5">
+                <div class="container py-5">
+                    <section class="row justify-content-between justify-content-around " style="background-color: whitesmoke;">
+                        <div class="col-12 ">
+                            <p>✦  Latest from Blog</p>
+                            <h2>We Love To Share Our Learnings</h2>
+                        </div>
+                        <section class="row">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Whay do i need a mobile-friendly webside?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body"> 
+                                            This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                         Which technology or tools used for website designing?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                          What is the best custom software development company in india?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                        what are the RCM challenges faced by hospitals?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>        
+                            </div>
+                        </section>
+                    </div>
+                    </section>
+                </div>
+            </section>
+            <!--  -->
+
+            <!-- marquee  start-->
+     <div class="marqee mt-5  " >
+        <marquee direction="right" height="40px" style="background-color: rgb(107, 116, 219); color: white;">
+
+            <span class="mt-5">
+                <span class="alternate">✦</span>
+                <span>We Build Brands</span>
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                <span>Focus on Your Business</span>
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                <span>Grow Your Business</span>
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                 <span>Build Your Audience</span>
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                <span>Gain More Traffic</span>
+
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                            
+
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                 <span>Build Your Audience</span>
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                 <span>Build Your Audience</span>
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                 <span>Build Your Audience</span>
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                 <span>Build Your Audience</span>
+            </span>
+            <span class="ms-5">
+                <span class="alternate">✦</span>
+                 <span>Build Your Audience</span>
+            </span>
+            </marquee>
+     </div>
+
+
+     <!-- marquee end -->
+
+     <!-- footer start -->
+        <div class="container">
+            <section class="row justify-content-between">
+                <div class="col-3 mt-5 py-5">
+                    <h4 class="ms-4">company</h4>
+                    <ul style="list-style: none;;">
+                        <li class="mt-3">about us</li>
+                        <li class="mt-3">contact us</li>
+                        <li class="mt-3">our process</li>
+                        <li class="mt-3">how we work</li>
+                    </ul>
+                </div>
+            
+                <div class="col-3 mt-5 py-4">
+                    <img src="./assets/logo-dark (2).svg" class="img-fluid ms-4" style="width: 70%;">
+                    
+                    <section style="display: flex; justify-content: space-between;" class="mt-5">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-invision"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    </section>
+                </div>
+
+                <div class="col-3 mt-5 py-5 text-end">
+                    <h4 class="ms-4">Solution</h4>
+                    <ul style="list-style: none;;">
+                        <li class="mt-3">Web design</li>
+                        <li class="mt-3">mobile app design</li>
+                        <li class="mt-3">digital-marketing</li>
+                        <li class="mt-3">Ecommerce development</li>
+                    </ul>
+                </div>
+                
+            
+            </section>  
+            <div class="text-center">
+                <button>Contact Information</button>
+            </div>
+        </div>
+
+     <!-- footer end -->
+
+
+     
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>          
+</body>
+</html>
